@@ -14,6 +14,8 @@
 
 [Solo](https://github.com/b3log/solo) 是一款**一个命令**就能搭建好的 Java 开源博客系统，并内置了 15+ 套精心制作的皮肤。除此之外，Solo 还有着非常活跃的[社区](https://hacpai.com/b3log)，文章分享到社区后可以让很多人看到，产生丰富的交流互动。
 
+Solo 的第一个版本发布于 2010 年，至今已经非常成熟稳定，请放心使用 :smirk_cat:
+
 ## 功能 
 
 Solo 沉淀至今的**每一个功能你应该都会用到**。我们不会将只有“20%”用户使用的功能添加进来，只有这样才能保持博客系统本该有的纯净，足够轻量才能带来简约的使用体验。
@@ -44,6 +46,36 @@ Solo 沉淀至今的**每一个功能你应该都会用到**。我们不会将�
 
 如果有新版可用，升级过程也是非常简单的，只需要重新部署新版本就可以，不用运行额外的任何脚本。
 
+## 界面
+
+编辑文章
+
+![5f7258675e0143c79e15ddffabf02147-article.png](https://img.hacpai.com/file/2017/8/5f7258675e0143c79e15ddffabf02147-article.png) 
+
+选择皮肤
+
+![ac9a044c18ec4dd4a9356caf698d7fe8-skin.png](https://img.hacpai.com/file/2017/8/ac9a044c18ec4dd4a9356caf698d7fe8-skin.png) 
+
+前台界面
+
+* 9IPHP [下载](https://github.com/b3log/solo-skins/tree/master/9IPHP) [预览](http://vanessa.b3log.org/?skin=9IPHP)
+* Andrea [下载](https://github.com/b3log/solo-skins/tree/master/Andrea) [预览](http://vanessa.b3log.org/?skin=Andrea)
+* Bruce [下载](https://github.com/b3log/solo-skins/tree/master/Bruce) [预览](http://vanessa.b3log.org/?skin=Bruce)
+* classic [下载](https://github.com/b3log/solo-skins/tree/master/classic) [预览](http://vanessa.b3log.org/?skin=classic)
+* Community [下载](https://github.com/b3log/solo-skins/tree/master/Community) [预览](http://vanessa.b3log.org/?skin=Community)
+* ease [下载](https://github.com/b3log/solo-skins/tree/master/ease) [预览](http://vanessa.b3log.org/?skin=ease)
+* favourite [下载](https://github.com/b3log/solo-skins/tree/master/favourite) [预览](http://vanessa.b3log.org/?skin=favourite)
+* Finding [下载](https://github.com/b3log/solo-skins/tree/master/Finding) [预览](http://vanessa.b3log.org/?skin=Finding)
+* i-nove [下载](https://github.com/b3log/solo-skins/tree/master/i-nove) [预览](http://vanessa.b3log.org/?skin=i-nove)
+* metro-hot [下载](https://github.com/b3log/solo-skins/tree/master/metro-hot) [预览](http://vanessa.b3log.org/?skin=metro-hot)
+* mobile [下载](https://github.com/b3log/solo-skins/tree/master/mobile) [预览](http://vanessa.b3log.org/?skin=mobile)
+* NeoEase [下载](https://github.com/b3log/solo-skins/tree/master/NeoEase) [预览](http://vanessa.b3log.org/?skin=NeoEase)
+* next [下载](https://github.com/b3log/solo-skins/tree/master/next) [预览](http://vanessa.b3log.org/?skin=next)
+* owmx-3.0 [下载](https://github.com/b3log/solo-skins/tree/master/owmx-3.0) [预览](http://vanessa.b3log.org/?skin=owmx-3.0)
+* timeline [下载](https://github.com/b3log/solo-skins/tree/master/timeline) [预览](http://vanessa.b3log.org/?skin=timeline)
+* tree-house [下载](https://github.com/b3log/solo-skins/tree/master/tree-house) [预览](http://vanessa.b3log.org/?skin=tree-house)
+* yilia [下载](https://github.com/b3log/solo-skins/tree/master/yilia) [预览](http://vanessa.b3log.org/?skin=yilia)
+
 ## 安装
 
 JDK 环境准备好之后[下载](http://pan.baidu.com/share/link?shareid=541735&uk=3255126224)最新的 Solo 包解压，进入解压目录执行：
@@ -51,9 +83,7 @@ JDK 环境准备好之后[下载](http://pan.baidu.com/share/link?shareid=541735
 * Windows: `java -cp WEB-INF/lib/*;WEB-INF/classes org.b3log.solo.Starter`
 * Unix-like: `java -cp WEB-INF/lib/*:WEB-INF/classes org.b3log.solo.Starter`
 
-**更多细节请参考 [Solo 用户指南](https://hacpai.com/article/1492881378588)。**
-
-另外，如果你想用 Solo 但又不想自己维护服务器，那可以尝试购买我们搭建好的 Solo 直接[使用](http://b3log.org/services/#solo)。
+**更多细节请参考 [Solo 用户指南](https://hacpai.com/article/1492881378588)。另外，如果你想用 Solo 但又不想自己维护服务器，可以购买我们搭建好的 Solo 直接[使用](http://b3log.org/services/#solo)。**
 
 ## 文档
 

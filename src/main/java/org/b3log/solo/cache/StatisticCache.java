@@ -20,56 +20,58 @@ import org.b3log.latke.cache.Cache;
 import org.b3log.latke.cache.CacheFactory;
 import org.b3log.latke.ioc.inject.Named;
 import org.b3log.latke.ioc.inject.Singleton;
-import org.b3log.solo.model.Option;
+import org.b3log.solo.model.Statistic;
 import org.b3log.solo.util.JSONs;
 import org.json.JSONObject;
 
 /**
- * Option cache.
+ * Statistic cache.
  *
  * @author <a href="http://88250.b3log.org">Liang Ding</a>
- * @version 1.0.0.0, Jul 16, 2017
+ * @version 1.0.0.0, Aug 30, 2017
  * @since 2.3.0
  */
 @Named
 @Singleton
-public class OptionCache {
+public class StatisticCache {
 
     /**
-     * Option cache.
+     * Statistic cache.
      */
-    private Cache CACHE = CacheFactory.getCache(Option.OPTIONS);
+    private Cache cache = CacheFactory.getCache(Statistic.STATISTIC);
 
     /**
-     * Gets an option by the specified option id.
+     * Gets an statistic by the specified statistic id.
      *
-     * @param id the specified option id
-     * @return option, returns {@code null} if not found
+     * @param id the specified statistic id
+     * @return statistic, returns {@code null} if not found
      */
-    public JSONObject getOption(final String id) {
-        final JSONObject option = CACHE.get(id);
-        if (null == option) {
+    public JSONObject getStatistic(final String id) {
+        final JSONObject statistic = cache.get(id);
+        if (null == statistic) {
             return null;
         }
 
-        return JSONs.clone(option);
+        return JSONs.clone(statistic);
     }
 
     /**
-     * Adds or updates the specified option.
+     * Adds or updates the specified statistic.
      *
-     * @param option the specified option
+     * @param statistic the specified statistic
      */
-    public void putOption(final JSONObject option) {
-        CACHE.put(option.optString(Keys.OBJECT_ID), JSONs.clone(option));
+    public void putStatistic(final JSONObject statistic) {
+        final String statisticId = statistic.optString(Keys.OBJECT_ID);
+
+        cache.put(statisticId, JSONs.clone(statistic));
     }
 
     /**
-     * Removes an option by the specified option id.
+     * Removes an statistic by the specified statistic id.
      *
-     * @param id the specified option id
+     * @param id the specified statistic id
      */
-    public void removeOption(final String id) {
-        CACHE.remove(id);
+    public void removeStatistic(final String id) {
+        cache.remove(id);
     }
 }
